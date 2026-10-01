@@ -11,9 +11,36 @@
 //Console.WriteLine(valorFrequenciaProduto.ToString("F2", CultureInfo.InvariantCulture));
 
 //placeholder
-string nome = "Maria";
-int idade = 19;
-double saldo = 10.987;
+//string nome = "Maria";
+//int idade = 20;
+//double saldo = 10.987;
 
-Console.WriteLine("{0} tem {1} anos, e possui R$ {2} na conta!", nome, idade, saldo.ToString("F2", CultureInfo.InvariantCulture));
+////placeholder
+//Console.WriteLine("{0} tem {1} anos, e possui R$ {2} na conta!", nome, idade, saldo.ToString("F2", CultureInfo.InvariantCulture));
 
+////interpolação
+//Console.WriteLine($"{nome} tem {idade} anos, ela possui {saldo:F2} reais na conta!");
+
+////concatenação
+//Console.WriteLine(nome + "tem" + idade + "anos" + "e ela possui incríveis" + saldo + "reais na conta!");
+
+//int a = 10;
+////a += 2;
+//a %= 10; 
+
+//Console.WriteLine($"{a} isso é um operador de atribução funcionando!");
+
+////incremento e decremento 
+
+//int b = 10;
+
+//b++;
+//b--;
+//++b;
+//--b;
+//Console.WriteLine(b);
+
+int u = 4;
+int l = u++ * 2;
+
+Console.WriteLine(u);
