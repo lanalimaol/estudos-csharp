@@ -65,11 +65,11 @@
 //Console.WriteLine(pequeno);
 
 
-int nota1 = 7;
-int nota2 = 2;
+//int nota1 = 7;
+//int nota2 = 2;
 
-double resultado  = nota1 / nota2;
-Console.WriteLine(resultado);
+//double resultado  = nota1 / nota2;
+//Console.WriteLine(resultado);
 
 // Resolvendo um problema SEM orientação a objetos
 
