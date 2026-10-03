@@ -1,4 +1,6 @@
-﻿using System.Globalization; 
+﻿using System.Globalization;
+
+
 
 //string nomeProduto = "Caixinha de Som";
 //double valorFrequenciaProduto = 1.3455;
@@ -40,7 +42,31 @@
 //--b;
 //Console.WriteLine(b);
 
-int u = 4;
-int l = u++ * 2;
+//int u = 4;
+//int l = u++ * 2;
 
-Console.WriteLine(u);
+//Console.WriteLine(u);
+
+//int maquinaSenha = 10;
+
+//int minhaSenha = ++maquinaSenha;
+//int senhaDaAmiga = ++maquinaSenha;
+//int senhaDaAmiga2 = ++maquinaSenha;
+
+//Console.WriteLine(maquinaSenha); 
+//Console.WriteLine(minhaSenha);
+//Console.WriteLine(senhaDaAmiga);
+//Console.WriteLine(senhaDaAmiga2);
+
+//código abaixo possui uma exception causada propositalmente!
+
+//int a = 300;
+//byte pequeno = checked((byte)a); 
+//Console.WriteLine(pequeno);
+
+
+int nota1 = 7;
+int nota2 = 2;
+
+double resultado  = nota1 / nota2;
+Console.WriteLine(resultado);
