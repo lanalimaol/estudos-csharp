@@ -111,7 +111,7 @@ using PrimeiroProjeto;
 
 #endregion
 
-#region isntancias 
+#region isntancias de uma classe
 Pessoa pessoa1 = new Pessoa();
 pessoa1.Nome = "Lana"; 
 pessoa1.Idade = 24;
