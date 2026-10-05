@@ -16,7 +16,7 @@ namespace PrimeiroProjeto
 
 
         //metodos de uma instancia TRIANGULO (semiperimetro e area)
-        public double Perimetro()
+        public double SemiPerimetro()
         {
            return (ladoA + ladoB + ladoC) / 2.0;
 
@@ -24,7 +24,7 @@ namespace PrimeiroProjeto
 
         public double AreaTriangulo()
         {
-           double p = Perimetro(); 
+           double p = SemiPerimetro(); 
            return Math.Sqrt(p * (p - ladoA) * (p - ladoB) * (p - ladoC ));
         }
 
