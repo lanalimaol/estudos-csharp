@@ -7,7 +7,7 @@ namespace PrimeiroProjeto
     internal class Triangulo
     {
 
-        //atributos de uma instancia TRIANGULO 
+        //atributos de uma instância TRIÂNGULO 
         public double ladoA { get; set; }
         public double ladoB { get; set; }
         public double ladoC { get; set; }
@@ -15,7 +15,7 @@ namespace PrimeiroProjeto
 
 
 
-        //metodos de uma instancia TRIANGULO (semiperimetro e area)
+        //metodos de uma instância TRIÂNGULO (semiperimetro e area)
         public double SemiPerimetro()
         {
            return (ladoA + ladoB + ladoC) / 2.0;
