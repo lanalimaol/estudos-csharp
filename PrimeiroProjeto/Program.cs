@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Globalization;
-using PrimeiroProjeto; 
+using PrimeiroProjeto;
 
+#region revisao logica csharp
 
 //string nomeProduto = "Caixinha de Som";
 //double valorFrequenciaProduto = 1.3455;
@@ -72,6 +73,9 @@ using PrimeiroProjeto;
 //double resultado  = nota1 / nota2;
 //Console.WriteLine(resultado);
 
+#endregion
+
+#region introducao a POO e Classes
 // Resolvendo um problema SEM orientação a objetos
 
 //double xA, xB, xC, yA, yB, yC;
@@ -105,9 +109,31 @@ using PrimeiroProjeto;
 //    Console.WriteLine("Maior área: Y");
 //}
 
+#endregion
+
+#region isntancias 
 Pessoa pessoa1 = new Pessoa();
 pessoa1.Nome = "Lana"; 
 pessoa1.Idade = 24;
 
-pessoa1.Apresentar(); 
+pessoa1.Apresentar();
 
+Triangulo x, y; 
+x = new Triangulo();
+y = new Triangulo();
+
+Console.WriteLine("Entre com os lados do triângulo X: ");
+x.ladoA = double.Parse(Console.ReadLine());
+x.ladoB = double.Parse(Console.ReadLine());
+x.ladoC = double.Parse(Console.ReadLine());
+
+
+Console.WriteLine("Entre com os lados do triângulo Y: ");
+y.ladoA = double.Parse(Console.ReadLine());
+y.ladoB = double.Parse(Console.ReadLine());
+y.ladoC = double.Parse(Console.ReadLine());
+
+Console.WriteLine("Área do Triângulo X: " + x.AreaTriangulo());
+Console.WriteLine("Área do Triâgulo Y: " + y.AreaTriangulo());
+
+#endregion
