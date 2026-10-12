@@ -2,6 +2,7 @@
 using PrimeiroProjeto;
 
 
+#region revisao logica csharp
 
 //string nomeProduto = "Caixinha de Som";
 //double valorFrequenciaProduto = 1.3455;
@@ -72,6 +73,9 @@ using PrimeiroProjeto;
 //double resultado  = nota1 / nota2;
 //Console.WriteLine(resultado);
 
+#endregion
+
+#region introducao a POO e Classes
 // Resolvendo um problema SEM orientação a objetos
 
 //double xA, xB, xC, yA, yB, yC;
@@ -86,6 +90,10 @@ using PrimeiroProjeto;
 //yB = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 //yC = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
+Console.WriteLine("Entre com os lados do triângulo X: ");
+x.ladoA = double.Parse(Console.ReadLine());
+x.ladoB = double.Parse(Console.ReadLine());
+x.ladoC = double.Parse(Console.ReadLine());
 
 //double p = (xA + xB + xC) / 2.0;
 //double areaX = Math.Sqrt(p * (p - xA) * (p - xB) * (p - xC));
