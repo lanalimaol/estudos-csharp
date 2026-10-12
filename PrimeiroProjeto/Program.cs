@@ -1,6 +1,6 @@
-﻿using System;
-using System.Globalization;
+﻿using System.Globalization;
 using PrimeiroProjeto;
+
 
 #region revisao logica csharp
 
@@ -90,6 +90,10 @@ using PrimeiroProjeto;
 //yB = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 //yC = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
+Console.WriteLine("Entre com os lados do triângulo X: ");
+x.ladoA = double.Parse(Console.ReadLine());
+x.ladoB = double.Parse(Console.ReadLine());
+x.ladoC = double.Parse(Console.ReadLine());
 
 //double p = (xA + xB + xC) / 2.0;
 //double areaX = Math.Sqrt(p * (p - xA) * (p - xB) * (p - xC));
@@ -108,32 +112,5 @@ using PrimeiroProjeto;
 //{
 //    Console.WriteLine("Maior área: Y");
 //}
-
-#endregion
-
-#region isntancias de uma classe
-Pessoa pessoa1 = new Pessoa();
-pessoa1.Nome = "Lana"; 
-pessoa1.Idade = 24;
-
-pessoa1.Apresentar();
-
-Triangulo x, y; 
-x = new Triangulo();
-y = new Triangulo();
-
-Console.WriteLine("Entre com os lados do triângulo X: ");
-x.ladoA = double.Parse(Console.ReadLine());
-x.ladoB = double.Parse(Console.ReadLine());
-x.ladoC = double.Parse(Console.ReadLine());
-
-
-Console.WriteLine("Entre com os lados do triângulo Y: ");
-y.ladoA = double.Parse(Console.ReadLine());
-y.ladoB = double.Parse(Console.ReadLine());
-y.ladoC = double.Parse(Console.ReadLine());
-
-Console.WriteLine("Área do Triângulo X: " + x.AreaTriangulo());
-Console.WriteLine("Área do Triâgulo Y: " + y.AreaTriangulo());
-
-#endregion
+double mediaUsuario = Funcoes.CalculaMedia(10, 10);
+Console.WriteLine("A média é: " + mediaUsuario); 
