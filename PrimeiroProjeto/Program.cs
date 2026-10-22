@@ -1,6 +1,11 @@
 ﻿using System;
-using System.Globalization;
+﻿using System;
 using System;
+using PrimeiroProjeto;
+﻿using System.Globalization;
+using PrimeiroProjeto;
+
+>>>>>>>>> Temporary merge branch 2
 
 #region revisao logica csharp
 
@@ -87,15 +92,15 @@ using System;
 //xB = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 //xC = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
+//Console.WriteLine("Entre com os lados do triângulo X: ");
+//x.ladoA = double.Parse(Console.ReadLine());
+//x.ladoB = double.Parse(Console.ReadLine());
+//x.ladoC = double.Parse(Console.ReadLine());
 //Console.WriteLine("Entre com as medidas do triângulo Y: ");
 //yA = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 //yB = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 //yC = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-//Console.WriteLine("Entre com os lados do triângulo X: ");
-//x.ladoA = double.Parse(Console.ReadLine());
-//x.ladoB = double.Parse(Console.ReadLine());
-//x.ladoC = double.Parse(Console.ReadLine());
 
 //double p = (xA + xB + xC) / 2.0;
 //double areaX = Math.Sqrt(p * (p - xA) * (p - xB) * (p - xC));
@@ -109,11 +114,6 @@ using System;
 //if (areaX > areaY)
 //{
 //    Console.WriteLine("Maior área: X");
-//}
-//else
-//{
-//    Console.WriteLine("Maior área: Y");
-//}
 
 Console.WriteLine("Digite três números");
 int n1 = int.Parse(Console.ReadLine());
@@ -130,4 +130,25 @@ if(n1 > n2 && n1 > n3)
 else
 {
     Console.WriteLine("O maior numero é" + n3);
-}
+}x = new Triangulo();
+y = new Triangulo();
+
+Console.WriteLine("Entre com os lados do triângulo X: ");
+x.ladoA = double.Parse(Console.ReadLine());
+x.ladoB = double.Parse(Console.ReadLine());
+x.ladoC = double.Parse(Console.ReadLine());
+
+
+Console.WriteLine("Entre com os lados do triângulo Y: ");
+y.ladoA = double.Parse(Console.ReadLine());
+y.ladoB = double.Parse(Console.ReadLine());
+y.ladoC = double.Parse(Console.ReadLine());
+
+Console.WriteLine("Área do Triângulo X: " + x.AreaTriangulo());
+Console.WriteLine("Área do Triâgulo Y: " + y.AreaTriangulo());
+
+#endregion
+=========
+double mediaUsuario = Funcoes.CalculaMedia(10, 10);
+Console.WriteLine("A média é: " + mediaUsuario); 
+>>>>>>>>> Temporary merge branch 2
