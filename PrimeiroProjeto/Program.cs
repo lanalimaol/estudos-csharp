@@ -1,5 +1,6 @@
 ﻿using System.Globalization;
-using PrimeiroProjeto;
+using System;
+
 
 
 
@@ -104,5 +105,20 @@ using PrimeiroProjeto;
 //{
 //    Console.WriteLine("Maior área: Y");
 //}
-double mediaUsuario = Funcoes.CalculaMedia(10, 10);
-Console.WriteLine("A média é: " + mediaUsuario); 
+
+Console.WriteLine("Digite três números");
+int n1 = int.Parse(Console.ReadLine());
+int n2 = int.Parse(Console.ReadLine());
+int n3 = int.Parse(Console.ReadLine());
+
+if(n1 > n2 && n1 > n3)
+{
+    Console.WriteLine("o maior é " + n1);
+}else if(n2 > n3)
+{
+    Console.WriteLine("o maior numero é " + n2);
+}
+else
+{
+    Console.WriteLine("O maior numero é" + n3);
+}
