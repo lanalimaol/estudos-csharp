@@ -1,8 +1,15 @@
 ﻿using System;
-using System.Globalization;
+﻿using System;
+using System;
+using PrimeiroProjeto;
+﻿using System.Globalization;
 using PrimeiroProjeto;
 
+>>>>>>>>> Temporary merge branch 2
+
 #region revisao logica csharp
+
+
 
 //string nomeProduto = "Caixinha de Som";
 //double valorFrequenciaProduto = 1.3455;
@@ -85,6 +92,10 @@ using PrimeiroProjeto;
 //xB = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 //xC = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
+//Console.WriteLine("Entre com os lados do triângulo X: ");
+//x.ladoA = double.Parse(Console.ReadLine());
+//x.ladoB = double.Parse(Console.ReadLine());
+//x.ladoC = double.Parse(Console.ReadLine());
 //Console.WriteLine("Entre com as medidas do triângulo Y: ");
 //yA = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 //yB = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
@@ -103,23 +114,23 @@ using PrimeiroProjeto;
 //if (areaX > areaY)
 //{
 //    Console.WriteLine("Maior área: X");
-//}
-//else
-//{
-//    Console.WriteLine("Maior área: Y");
-//}
 
-#endregion
+Console.WriteLine("Digite três números");
+int n1 = int.Parse(Console.ReadLine());
+int n2 = int.Parse(Console.ReadLine());
+int n3 = int.Parse(Console.ReadLine());
 
-#region isntancias de uma classe
-Pessoa pessoa1 = new Pessoa();
-pessoa1.Nome = "Lana"; 
-pessoa1.Idade = 24;
-
-pessoa1.Apresentar();
-
-Triangulo x, y; 
-x = new Triangulo();
+if(n1 > n2 && n1 > n3)
+{
+    Console.WriteLine("o maior é " + n1);
+}else if(n2 > n3)
+{
+    Console.WriteLine("o maior numero é " + n2);
+}
+else
+{
+    Console.WriteLine("O maior numero é" + n3);
+}x = new Triangulo();
 y = new Triangulo();
 
 Console.WriteLine("Entre com os lados do triângulo X: ");
@@ -137,3 +148,7 @@ Console.WriteLine("Área do Triângulo X: " + x.AreaTriangulo());
 Console.WriteLine("Área do Triâgulo Y: " + y.AreaTriangulo());
 
 #endregion
+=========
+double mediaUsuario = Funcoes.CalculaMedia(10, 10);
+Console.WriteLine("A média é: " + mediaUsuario); 
+>>>>>>>>> Temporary merge branch 2
